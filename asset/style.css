@@ -2,14 +2,56 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+
+.MySertif {
+  background-color: #31465a;
+  color: #fff;
+  box-shadow: 4px 6px 6px 2px #00000040;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.sertif {
+  padding-top: 5rem;
+}
+
+.sertImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 body img {
-  margin-top: 5rem;
-  max-width: 100%;
+  margin-top: 1.5rem;
+  max-width: 40%;
   object-fit: cover;
 }
 
 .sertif img {
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .sertImg {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 0;
+  }
+
+  .sertif{
+    padding-top: 6rem;
+  }
+
+  body img {
+    margin-top: .1rem;
+    max-width: 90%;
+  }
 }
